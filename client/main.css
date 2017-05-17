@@ -1,1 +1,9 @@
 /* CSS declarations go here */
+#render-target > div > canvas
+{
+  z-index: 100;
+    position: absolute;
+
+    width: 600px;
+   height: 600px;
+}

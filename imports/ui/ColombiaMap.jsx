@@ -28,6 +28,7 @@ export default class ColombiaMap extends Component {
 		  .range(['#fff', '#409A99']);
 
 		this.projection = d3.geo.mercator()
+
 		  .scale(1500)
 		  // Center the Map in Colombia
 		  .center([-74, 4.5])
@@ -68,6 +69,7 @@ export default class ColombiaMap extends Component {
 		  .classed('big-text', true)
 		  .attr('x', 20)
 		  .attr('y', 45);
+
 
 		let me = this;
 		// Load map data

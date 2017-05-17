@@ -26,14 +26,14 @@ export class App extends Component {
 
   }
 
-setProjection()
-{
-console.log("HOLA");
-
-}
 getProjection()
 {
+  return this.projection;
 
+}
+setProjection(newprojection)
+{
+this.projection=newprojection;
 
 }
 
@@ -53,12 +53,17 @@ getProjection()
         <Overlay
           width="600"
           height="600"
-          setProjection={this.setProjection.bind(this)}
+          getProjection={this.getProjection.bind(this)}
+          tweets={this.props.tweets}
+
+
         ></Overlay>
         <ColombiaMap
           width="600"
           height="600"
-          setProjection={this.getProjection.bind(this)}
+          data={{}}
+          setProjection={this.setProjection.bind(this)}
+
         ></ColombiaMap>
 
 
