@@ -73,6 +73,9 @@ this.projection=newprojection;
         <h2>Results:</h2>
 
         <h2>Nearest Tweet to your selection:</h2>
+        <img src="../template/edit.png" id="profile"/>
+
+
 
         <p id="p1"></p>
 

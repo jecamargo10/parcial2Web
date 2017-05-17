@@ -72,6 +72,10 @@ else
         console.log(tweet)
         document.getElementById("p1").innerHTML = tweet.text;
 
+        var edit_save = document.getElementById("profile");
+
+              edit_save.src = tweet.user.profile_image_url;
+
 
 
       }
