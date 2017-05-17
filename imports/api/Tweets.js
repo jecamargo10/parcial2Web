@@ -27,15 +27,15 @@ if (Meteor.isServer) {
   // This method will trigger the streamer
   Meteor.methods({
     "twitter.stream"(query) {
-      
+
       console.log("Twitter search" + query);
 
       // Create the Twitter object
       let client = new Twitter({
-        consumer_key: "R5F6FHrmp06Tkb81zn7lonS14",
-        consumer_secret: "UXMAtlro8KHTNnms8kbp3JtmFEo6NebujC1Dr6kNhnFbyW3HUc",
-        access_token_key: "337434398-rBkL7N2dbe3qIUhVgVBR9j66Ors0ebDm6Hw6nV2d",
-        access_token_secret: "5hS5snkKOuMGSJ3H5VyjXxc4tVMHUf4xmrJ7U9XX6szSg"
+        consumer_key: process.env.TWITTER_CONSUMER_KEY,
+        consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+        access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
+        access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
       });
 
 

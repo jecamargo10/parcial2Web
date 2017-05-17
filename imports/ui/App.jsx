@@ -43,6 +43,7 @@ this.projection=newprojection;
   render() {
     console.log("render!");
     return (
+
       <div>
         <input type="text" onKeyPress={this.changeQuery.bind(this)} placeholder="Query"/>
         { this.props && this.props.err ?
@@ -50,6 +51,9 @@ this.projection=newprojection;
           <span></span>
         }
         <h2>Map of Colombia</h2>
+
+
+
         <Overlay
           width="600"
           height="600"
@@ -66,6 +70,11 @@ this.projection=newprojection;
 
         ></ColombiaMap>
 
+        <h2>Results:</h2>
+
+        <h2>Nearest Tweet to your selection:</h2>
+
+        <p id="p1"></p>
 
 
         <h2>Results:</h2>

@@ -1,15 +1,13 @@
-# twitterStreamerMeteor
+First you have to setup your credentials on the server using environment variables:
 
-A simple boilerplate for a Meteor 1.4 Twitter streamer application with React. Uses the twitter [npm](https://www.npmjs.com/package/twitter) module for connecting to twitter. It requires you to setup your credentials on the server using environment variables:
-
-```
 export TWITTER_CONSUMER_KEY="yourCredentialsHere"
 export TWITTER_CONSUMER_SECRET="yourCredentialsHere"
 export TWITTER_ACCESS_TOKEN_KEY="yourCredentialsHere"
 export TWITTER_ACCESS_TOKEN_SECRET="yourCredentialsHere"
 
-meteor npm install
-meteor
-```
+then run the following comands:
+ npm install
+npm start
 
-This is a very basic implementation that handles a global search shared by all users and doesn't implement any security or restriction. It's intended as a starting point, so add your own requirements.
+
+You can see the creative aspect with the option for find the nearest Tweet to certain location in the map, you click the location and under the map you see the respective Tweet

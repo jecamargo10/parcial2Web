@@ -5,6 +5,8 @@ export default class Overlay extends Component {
     super(props);
     this.canvas= null;
     this.arr = [];
+    this.state ={ };
+
   }
 
 
@@ -67,7 +69,10 @@ else
       posy = pos.y;
       if(posx -  puntos[0]< 10 && posy -  puntos[1]< 10)
       {
-        console.log(posx,posy)
+        console.log(tweet)
+        document.getElementById("p1").innerHTML = tweet.text;
+
+
 
       }
     }
